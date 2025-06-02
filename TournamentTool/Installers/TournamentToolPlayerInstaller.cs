@@ -1,5 +1,4 @@
-﻿/*
-//using TournamentTool.Models;
+﻿using TournamentTool.Models;
 using Zenject;
 
 namespace TournamentTool.Installers
@@ -8,8 +7,7 @@ namespace TournamentTool.Installers
     {
         public override void InstallBindings()
         {
-            //this.Container.BindInterfacesAndSelfTo<TournamentToolController>().FromNewComponentOnNewGameObject().AsCached().NonLazy();
+            this.Container.BindInterfacesAndSelfTo<TournamentToolController>().FromNewComponentOnNewGameObject().AsCached().NonLazy();
         }
     }
 }
-*/

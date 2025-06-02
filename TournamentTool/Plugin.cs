@@ -1,4 +1,4 @@
-﻿//using TournamentTool.Installers;
+﻿using TournamentTool.Installers;
 using IPA;
 using IPA.Config;
 using IPA.Config.Stores;
@@ -38,7 +38,7 @@ namespace TournamentTool
             //使用するZenjectのインストーラーのコメントを外します
             //zenjector.Install<TournamentToolAppInstaller>(Location.App);
             //zenjector.Install<TournamentToolMenuInstaller>(Location.Menu);
-            //zenjector.Install<TournamentToolPlayerInstaller>(Location.Player);
+            zenjector.Install<TournamentToolPlayerInstaller>(Location.Player);
         }
 
         [OnStart]
